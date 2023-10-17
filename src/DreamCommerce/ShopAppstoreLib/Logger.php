@@ -9,7 +9,7 @@ class Logger extends AbstractLogger
     /**
      * {@inheritDoc}
      */
-    public function log($level, $message, array $context = array())
+    public function log($level, $message, array $context = array()): void
     {
         if(defined("DREAMCOMMERCE_DEBUG")) {
             $status = DREAMCOMMERCE_DEBUG;
